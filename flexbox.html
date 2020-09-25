@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example Layout</title>
+    <style>
+        .header,.footer{
+            display: flex;
+            background-color: blue;
+            height: 50px;
+        }
+        .main{
+            display: flex;
+            
+            height: 100vh;
+        }
+        .section{
+            flex:2;
+            /* background-color: orangered; */
+        }
+        .aside{
+            flex:1;
+            /* background-color: aqua; */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        header
+    </header>
+    <main class="main">
+        <section class="section">
+            <p>Under Development Features: Talent Bank/Pool, VMS Intigration, Analytics, Social Integration, Reports, API Integration, Resource and Timesheets Management, Company Admin
+            </p>
+            <h1>LATEST JOBS</h1>
+            <hr>
+            <img src="images/oha.jpg" alt="oha">
+            <h4>system administrator(tier 3)</h4>
+            <h5 style="color: cornflowerblue;">sohanitinc contrat denver co</h5>
+        
+            <hr>
+            <img src="images/oha.jpg" alt="oha">
+            <h4>senior IT project manager</h4>
+            <h5 style="color: cornflowerblue;">sohanitinc contrat denver co</h5>
+            <hr>
+            <img src="images/oha.jpg" alt="oha">
+            <h4>senior IT project manager</h4>
+            <h5 style="color: cornflowerblue;">sohanitinc contrat denver co</h5>
+            <hr>
+        </section>
+        <aside class="aside">
+            <h4>subscribe for new jobs</h4>
+            <form>
+               <input type="text" placeholder="select country">
+               <input type="text" placeholder="city,country">
+       
+               <input type="text" placeholder="email">
+           </form>
+           <button type="button" onclick="alert(hello) ">subscribe</button>        </aside>
+    </main>
+    <footer class="footer">
+        footer
+    </footer>
+</body>
+</html>
